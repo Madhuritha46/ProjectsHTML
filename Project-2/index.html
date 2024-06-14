@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <h1 id="title">Vaccine Details</h1>
+        <p id="description">Please fill out this form with the required information</p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+            <fieldset>
+                <label id="name-label">Name:
+                    <input placeholder="Enter Your Name:" id="name" type="text" required/>
+                </label>
+                <label id="email-label">Email ID:
+                    <input placeholder="Enter Your Email ID" id="email" type="email" required/>
+                </label>
+                <label id="number-label">Age:
+                    <input placeholder="Enter Your Age" id="number" type="number" min="14" max="99" required/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Gender:
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Prefer to not say</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset><legend>Vaccination:</legend>
+                <label><input id="vaccinated" value="Vaccinated" class="inline" type="radio" name="Vaccinated-Notvaccinated" /> Vaccinated</label>
+                <label><input id="not-vaccinated" value="Not-Vaccinated" class="inline" type="radio" name="Vaccinated-Notvaccinated" /> Not-Vaccinated</label>
+            </fieldset>
+            <fieldset><legend>Vaccine Type:</legend>
+                <label><input id="covaxin" value="Covaxin" class="inline" type="radio" name="covaxin-covishield" /> Covaxin</label>
+                <label><input id="covishield" value="Covishield" class="inline" type="radio" name="covaxin-covishield" /> Covishield</label>
+            </fieldset>
+            <fieldset><legend>Dose:</legend>
+                <label><input id="I" class="inline" type="checkbox" value="I" /> I</label>
+                <label><input id="II" class="inline" type="checkbox" value="II"/> II</label>
+            </fieldset>
+            <fieldset><label for="vaccine-document">Upload Your Vaccine Document<input id="vaccine-document" type="file" name="file" /></label></fieldset>
+            <legend>Effect Of Dose</legend><textarea rows="2" placeholder="The effects and benefits are..."></textarea>
+            <input type="submit" id="submit"/>
+        </form>
+    </div>
+</body>
+</html>
